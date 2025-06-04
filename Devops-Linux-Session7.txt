@@ -1,0 +1,45 @@
+jwt
+oauth 1.0,2.0
+openidconnect
+pam--pluggable authenication module
+
+what is the diff x86 and arm ?
+whatis the use of /etc/passwd
+what is the use of /etc/shadow
+how to lock the user: 
+
+sudo passwd -l username
+
+howto unlock the user:
+************************
+
+sudo passwd -u username
+w: explain or show users info and tell what they are doing
+
+w
+lastlog
+lastb
+last
+
+what is the meaning of nologin shell:
+*************************************
+
+nologin shell is a file used to lock the user account permanently
+
+how to set:
+*************
+
+sudo vi /etc/passwd
+
+shiva:x:1001:1001::/home/shiva:/sbin/nologin
+
+to unlock permanently:
+shiva:x:1001:1001::/home/shiva:/bin/bash
+
+/etc/login.defs
+
+useradd---/etc/passwd-/etc/default/useradd------/etc/login.defs
+
+sudo usermod -l newloginname to oldname
+
+sudo usermod -l dravid rahul
